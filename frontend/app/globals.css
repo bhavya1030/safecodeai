@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body { font-family: "Space Grotesk", sans-serif; -webkit-font-smoothing: antialiased; }
+
+.code-scrollbar::-webkit-scrollbar { width: 8px; height: 8px; }
+.code-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.code-scrollbar::-webkit-scrollbar-thumb { background: #2d3a54; border-radius: 4px; }
+.code-scrollbar::-webkit-scrollbar-thumb:hover { background: #3d4d6e; }

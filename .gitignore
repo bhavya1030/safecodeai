@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML model artifacts (large binary files)
+*.npy
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+*.joblib
+models/
+# Allow the trained model so deployment works without retraining
+!bug_risk_model.pkl
+
+# Training data — raw downloaded datasets (can be large)
+C++ DATASET/
+JAVA DATASET/
+python DATASET/
+
+# Generated training artifacts (rebuilt by main.py + src/model.py)
+model_metrics.json
+X_features.npy
+y_labels.npy
+language_labels.npy
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Environment variables (keep .env.example files — they have no secrets)
+.env
+.env.local
+.env.*.local
+
+# Database files (SQLite dev DB auto-created at runtime)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Node / Next.js (frontend)
+node_modules/
+.next/
+out/
+dist/
+build/
+.npm
+*.tsbuildinfo
+next-env.d.ts
+
+# Package manager locks (keep package-lock.json, ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# Uploads / media
+uploads/
+
+# Temporary / test files
+*.tmp
+*.bak
+temp/
